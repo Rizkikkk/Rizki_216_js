@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title> Belajar Javascript Platfrom</title>
+    </head>
+    <body>
+        <h1> Tipe Data Pada Javascript</h1>
+        <div id="hasilangka"></div>
+        <div id="hasilkalimat"></div>
+        <div id="hasilhewan"></div>
+        <div id="hasilmanusia"></div>
+        <script>
+            //tipe data Number
+            var angka = 80;
+            //tipe data String
+            var kalimat ="Ayo Belajar Javascript";
+            //tipe data array 
+            var hewan =["kambing", "bebek", "ayam"];
+            //tipe data obyek
+            var manusia ={
+                nama : "budi",
+                alamat : "Yogyakarta",
+                umur : "20",
+                pekerjaan : "Mahasiswa"
+            };
+            document.getElementById("hasilangka").innerHTML =  angka;
+            document.getElementById("hasilkalimat").innerHTML =  kalimat;
+            document.getElementById("hasilhewan").innerHTML =  hewan[1];
+            document.getElementById("hasilmanusia").innerHTML =  manusai.nama + "tinggal di" + manusa.alamat + " dia sekarang berumur"+manusia.umur+"dan bekerja sebagai"+manusia.pekerjaan;
+        </script>
+    </body>
+</html>

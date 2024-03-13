@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR</title>
+</head>
+<body>
+    <table style="border: 1px solid black;">
+        <th>
+            <h1>Kalkulator Tambah/Kurang</h1>
+            <p><input id="angka1" type="number"> </p>
+            <p><input id="angka2" type="number"> </p>
+            <button onclick="penjumlahan()">Tambah</button>
+            <button onclick="pengurangan()">Kurang</button>
+            <p>Hasil <input id="hasil" type="number" readonly></p>
+                                               
+        </th>        
+    </table>
+    <script>          
+        function penjumlahan() {            
+            if (document.getElementById("angka1").value==""||document.getElementById("bilangan2").value=="") {
+                window.alert("Isi Dengan Bilangan")
+            }else{
+                ang1= parseInt(document.getElementById("angka1").value);
+                ang2=parseInt(document.getElementById("angka2").value);
+                var jumlah= ang1+ang2;
+                document.getElementById("hasil").value=jumlah;
+            }
+        }        
+
+        function pengurangan() {
+            if (document.getElementById("angka1").value==""||document.getElementById("bilangan2").value=="") {
+                window.alert("Isi Dengan Bilangan")
+            }else{
+                ang1= parseInt(document.getElementById("angka1").value);
+                ang2=parseInt(document.getElementById("angka2").value);
+                var jumlah= ang1-ang2;
+                document.getElementById("hasil").value=jumlah;
+            }
+        }    
+    </script>
+</body>
+</html>
